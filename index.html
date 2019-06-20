@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Permanent+Marker&display=swap" rel="stylesheet">    
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main class="bg">
+        <h1 class="title">Geography Trivia!</h1>
+        <section class="game-body invisible">
+            <div class="question-container container">
+                <h2 class="question-text text"></h2>
+            </div>
+            <div class="time-left-container container">
+                <p class="time-left-text text"><span class="time"></span> Seconds Remaining</p>
+                <p class="questions-remaining-text">Question <span class="current-question">1</span> of <span class="total-questions"></span></p>
+            </div>
+            <div class="answer-container container">
+                <h3 class="answer-text text" id="answer-1"></h3>
+                <h3 class="answer-text text" id="answer-2"></h3>
+                <h3 class="answer-text text" id="answer-3"></h3>
+                <h3 class="answer-text text" id="answer-4"></h3>
+            </div>
+        </section>
+        <section class="game-init">
+            <button class="btn-init">I'm Ready To Play.</button>
+        </section>
+        <section class="game-over invisible">
+            <div class="results">
+                <div class="results--grade">
+                    <p>Final Grade: <span class="grade"></span>%</p>
+                    <button class="reset">Try Again?</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>
