@@ -4,6 +4,7 @@ let correctCount, missedCount, startTime, timer, questionNum, totalQuestions, fi
 
 
 function gameInit() {
+    clearInterval(timer);
     questions = [
         {
             question: "What Is The State Capital Of New Mexico?",
@@ -167,7 +168,7 @@ function changeQuestion() {
     currentQuestion = randQuestion();
     setQuestion();
     clearInterval(timer);
-    startTime = 3;
+    startTime = 10;
     questionNum++;
     $('.time').html(startTime);
     $('.current-question').html(questionNum);
