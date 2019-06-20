@@ -112,7 +112,7 @@ function gameInit() {
     currentQuestion = randQuestion();
     totalQuestions = questions.length + 1;
     setQuestion();
-    startTime = 3;
+    startTime = 10;
     $('.current-question').html(questionNum);
     $('.total-questions').html(totalQuestions);
     $('.time').html(startTime);
